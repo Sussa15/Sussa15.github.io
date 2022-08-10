@@ -1,2 +1,2 @@
-# Sussa15.github.io
+# Egorov Nikita
 web-site
