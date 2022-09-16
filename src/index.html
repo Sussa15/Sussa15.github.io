@@ -9,190 +9,233 @@
     <meta property="ogititle" content="Это моя первая стрвница">
     
     <title>Никита Егоров - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
-<hader>
+<header>
     
     <nav>
         <div class="logo">Никита Егоров</div>
         <div class="menu">
         <ul>
-            <li>ОБО МНЕ</li>
-            <li>УСЛУГИ</li>
-            <li>КЕЙСЫ</li>
-            <li>ПРАЙС</li>
-            <li>ОТЗЫВЫ</li>
-            <li>КОНТАКТЫ</li>
+            <li><a href="#">ОБО МНЕ</a></li>
+            <li><a href="#">УСЛУГИ</a></li>
+            <li><a href="#">КЕЙСЫ</a></li>
+            <li><a href="#">ПРАЙС</a></li>
+            <li><a href="#">ОТЗЫВЫ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
         </div>
     </nav>
-</hader>
+   
+</header>
 
  <div class="main">
+     <div class="title_container">
       <h1>Привет <br> я Никита Егоров</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, id.</p>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, id.</h4>
       <input type="submit" value="Обо мне">
       <input type="submit" value="Мои работы">
-      <img src="" alt="фото">
+     </div>
   </div>
   <div class="me">
+     <div class="me_container">
       <h2>ОБО МНЕ</h2>
-      <img src="img/line.png" alt="___"><br>
-      <img src="" alt="фото">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum expedita blanditiis esse nihil aliquid consectetur officiis. Nisi, possimus, obcaecati.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum expedita blanditiis esse nihil aliquid consectetur officiis. Nisi, possimus, obcaecati.</p>
-      <input type="submit" value="Скачать резюме">
+      <hr>
+      <img src="img/myphoto.png" alt="">
+      <br>
+      <p class="firstText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum expedita blanditiis esse nihil aliquid consectetur officiis. Nisi, possimus, obcaecati.</p>
+      <p class="secondText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum expedita blanditiis esse nihil aliquid consectetur officiis. Nisi, possimus, obcaecati.</p>
+      <a href="#">Скачать резюме</a>
+      </div>
   </div>
   <div class="iCan">
+     <div class="iCan_container">
       <h2>ЧТО Я УМЕЮ</h2>
-      <img src="img/line.png" alt="___">
       <p></p>
-      <div class="iCan_web">
+      <div class="iCan_item">
           <img src="img/inotebook.png" alt="фото">
           <br>
           <a href="">веб-дизайн</a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, in.</p>
       </div>
-      <div class="iCan_devel">
+      <div class="iCan_item">
           <img src="img/znak.png" alt="фото">
           <br>
           <a href="">разработка</a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, in.</p>
       </div>
-      <div class="iCan_CEO">
+      <div class="iCan_item">
           <img src="img/rakete.png" alt="фото">
           <br>
           <a href="">СЕО-Оптимизация</a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, in.</p>
       </div>
-      <div class="iCan_mark">
+      <div class="iCan_item">
           <img src="img/rooper.png" alt="фото">
           <br>
           <a href="">Маркетинг</a>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, in.</p>
       </div>
+      <div class="clear"></div>
+      </div>
   </div>
   <div class="iKeys">
+     <div class="iKeys_container">
       <h2>КЕЙСЫ</h2>
-      <img src="img/line.png" alt="___">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, laboriosam.</p>
-      
-      <form>
-          <img src="img/slider.png" alt="слайдер" width="50%">
-          <div class="iKeys_client">
-          <p>Клиент</p>
+      <hr>
+      <p class="iKeys_subcription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, laboriosam.</p>
+      <img src="img/slider.png" alt="слайдер">
+          <div class="iKeys_Left">
+          <h3>Клиент</h3>
           <p>Lorem ipsum dolor sit amet.></p>
-          </div>
-          <div class="iKeys_site">
-          <p>Сайт</p>
+          <h3>Сайт</h3>
           <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="iKeys_name">
+          <a href="#">Visit Live Site</a>
+         </div>
+          <div class="iKeys_Right">
           <p>Название проекта</p>
           <p>Lorem ipsum dolor sit amet.</p>
           </div>
-          <div class="iKeys_button">
-              <input type="submit" value="Visit live site">
-          </div>
-      </form>
+        
+      <div class="clear"></div>
   </div>
+  <br>
   <div class="calculator">
-      <form action="">
-          <p>ТИП САЙТА</p>
-          <select name="" id="">
+     <div class="calculator_container">
+      <h2>Расчет стоимости</h2>
+         <div class="calculator_inner">
+          <h3>ТИП САЙТА</h3>
+          <select class="mySelect" name="type" id="typeSite">
               <option value="1">Визитка</option>
               <option value="2">Кооперативный</option>
               <option value="3">Интернет-магазин</option>
               <option value="4">Веб-сервис</option>
           </select>
-          <p>ДИЗАЙН</p>
-          <select name="" id="">
+          <h3>ДИЗАЙН</h3>
+          <select class="mySelect" name="type" id="typeSite">
               <option value="1">Простой</option>
               <option value="2">Деловой</option>
               <option value="3">Сложный</option>
               <option value="4">Свой</option>
           </select>
-          <p>АДАПТИВНОСЬ</p>
-          <select name="" id="">
+          <h3>АДАПТИВНОСЬ</h3>
+          <select class="mySelect" name="type" id="typeSite">
               <option value="1">Частичная</option>
               <option value="2">Полная</option>
 
           </select>
-          <p>Сроки</p>
-          <p>Стоимость</p>
-      </form>
+          <hr>
+           <div class="calculator_footer">
+               <div class="days">
+                   <p class="text">Сроки</p>
+                   <p class="digit">0</p>
+                   <div class="clear"></div>
+               </div>
+               <div class="price">
+                   <p class="text">Стоимость</p>
+                   <p class="digit">0</p>
+               <div class="clear"></div>
+               </div>
+           </div>
+         </div>
+      </div>
   </div>
+  
   <div class="iStats">
+     <div class="iStats_container">
       <h2>НЕМНОГО СТАТИСТИКИ</h2>
-      <img src="img/line.png" alt="___">
-      <p></p>
-      <div class="iStats_client">
+      <hr>
+      <div class="statistic_item margin-right">
           <img src="img/smile.png" alt="фото">
           <p>12</p>
           <p>счастливых клиентов</p>
       </div>
-       <div class="iStats_time">
+       <div class="statistic_item margin-right">
           <img src="img/znaks.png" alt="фото">
           <p>14</p>
           <p>часов работы</p>
       </div>
-       <div class="iStats_project">
+       <div class="statistic_item margin-rightt">
           <img src="img/ok.png" alt="фото">
           <p>16</p>
           <p>проектов завершено</p>
       </div>
-       <div class="iStats_cup">
+       <div class="statistic_item fourth">
           <img src="img/cup.png" alt="фото">
           <p>10</p>
           <p>наград получено</p>
       </div>
+      </div>
   </div>
   <div class="reviews">
+     <div class="reviews_container">
       <h2>ОТЗЫВЫ</h2>
-      <img src="img/line.png" alt="___">
-      <p></p>
-      <div class="reviews_text">
-      <img src="" alt="фото">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus at explicabo reiciendis iusto tenetur, ab qui sunt aut, consectetur accusantium!</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <hr>
+      <div class="review">
+      <img src="img/mihail.png" alt="фото">
+      
+      <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus at explicabo reiciendis iusto tenetur, ab qui sunt aut, consectetur accusantium!</p>
+      <p class="review_author">Lorem ipsum dolor sit amet.</p>
       </div>
   </div>
+      </div>
   <div class="iContact">
+     <div class="iContact_container">
       <h2>МОИ КОНТАКТЫ</h2>
-      <img src="img/line.png" alt="___">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nostrum?</p>
-      <div class="iC_geo">
+      <hr>
+      <p class="iContacts_subscription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nostrum?</p>
+      <div class="iContact_data">
+          <div class="iContact_data_item">
           <img src="img/geo.png" alt="фото">
           <p>Lorem ipsum dolor.</p>
-      </div>
-       <div class="iC_pis">
+          </div>
+      
+          <div class="iContact_data_item">
           <img src="img/pis.png" alt="фото">
           <p>Lorem ipsum dolor.</p>
-      </div>
-       <div class="iC_phone">
+          </div>
+          <div class="iContact_data_item">
           <img src="img/phone.png" alt="фото" >
           <p>Lorem ipsum dolor.</p>
-      </div>
-      <from>
-          <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-          <input type="text">
-          <input type="text">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="submit" name="contact" id="5">
+          </div>
+         </div>
+         <div class="clear"></div>
+         <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+      <from action="#">
+          <div class="iContacns_inputs">
+          <input type="text" placeholder="Имя">
+          <input class="secondInput" type="text" placeholder="Email">
+          <div class="clear"></div>
+          </div>
+          <textarea placeholder="Сообщение" name="message" id="messageText" cols="30" rows="10"></textarea>
+          <input type="submit" value="Отправить">
       </from>
-      <ul>
-          <li><img src="img/fb.png" alt="фото"></li>
-          <li><img src="img/twit.png" alt="фото"></li>
-          <li><img src="img/boll.png" alt="фото"></li>
-          <li><img src="img/cat.png" alt="фото"></li>
-          <li><img src="img/inst.png" alt="фото"></li>
-          <li><img src="img/in.png" alt="фото"></li>
-      </ul>
+        <div class="contacts_social">
+                <a href="#"><img src="img/fb.png" alt=""></a>
+                <a href="#"><img src="img/twit.png" alt=""></a>
+                <a href="#"><img src="img/boll.png" alt=""></a>
+                <a href="#"><img src="img/cat.png" alt=""></a>
+                <a href="#"><img src="img/inst.png" alt=""></a>
+                <a href="#"><img src="img/in.png" alt=""></a>
+                <div class="clear"></div>
+            </div>
+      </div>
+      </div>
+      
+      <div class="map">
       <img src="img/map.png" alt="карта">
-  </div>
+      </div>
+  
+  
+    <div class="footer">
+        <div class="footer_container">
+            <p>Copyright 2022 Егоров Никита. Design by Web</p>
+        </div>
+    </div>
 </body>
-<fouter>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, velit!</h5>
-</fouter>
+
 </html>
